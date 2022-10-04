@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>17. Shrinking Guest List</title>
+</head>
+
+<body>
+  
+</body>
+<script type="text/javascript">
+  document.write(`you can invite only two people for dinner<br><br>`);
+  var guests  = [
+    'Muhammad Anees',
+    'Muhammad Waqas', 
+    'Ehtisham', 
+    'Mohsin'  
+  ];
+
+  // add a new guest at bigginging..
+  guests.unshift('Moeed');
+
+  // insert guest name in middle of array
+  var middle_position = guests.length/2;
+  guests.splice(middle_position, 0, "Muhammad Sharjeel");
+
+  // Add new guest at end of the array as append is not a javascript function.
+  guests.push('Hamza Jamsheed');
+  console.log(guests);
+  guests.forEach(function (guest, index){
+    document.write(`${index} and lenth is ${guests.length}<br>`);
+
+    if(index < (guests.length-2)){
+        document.write(`${guest} you’re sorry you can’t invite them to dinner.`);
+    }
+
+
+    document.write(`${guest} is invited for dinner <br>`);
+  });
+
+
+
+
+  document.write(`<br><br>found a bigger dinner table.`);
+</script>
+
+</html>

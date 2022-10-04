@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>2.Name Cases</title>
+</head>
+
+<body>
+  <h3 id="personal_message"></h3>
+</body>
+<script type="text/javascript">
+  let titleCase = (str) => {
+    return str.toLowerCase().split(' ').map(function (word) {
+      return word.replace(word[0], word[0].toUpperCase());
+    }).join(' ');
+  }
+  var person_name = "joe biden";
+  document.write(`<h4>${person_name.toLowerCase()}</h4>`);
+  document.write(`<h4>${person_name.toUpperCase()}</h4>`);
+  var titleCaseString = titleCase(person_name);
+  document.write(`<h4>${titleCaseString}</h4>`);
+</script>
+
+</html>
