@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>24. More Conditional Tests</title>
+</head>
+
+<body>
+  
+</body>
+<script type="text/javascript">
+  
+  document.write(`#1 String Comparision: Pakistan = Pakistan = ? <br>`);
+  let result1 = ("Pakistan" === "Pakistan")? "True<br>": "False<br>";
+  document.write(result1); 
+
+  document.write(`#2 String Comparision: Pakistan = Pakistan231 = ? <br>`);
+  let result2 = ("Pakistan" === "Pakistan231")? "True<br>": "False<br>";
+  document.write(result2); 
+
+
+  document.write(`#3 Lower Case: pakistan = Pakistan = ? <br>`);
+  let result3 = ("Pakistan".toLowerCase() === "Pakistan")? "True<br>": "False<br>";
+  document.write(result3); 
+ 
+  document.write(`#4 Lower Case: pakistan = pakistan = ? <br>`);
+  let result4 = ("Pakistan".toLowerCase() === "Pakistan".toLowerCase())? "True<br>": "False<br>";
+  document.write(result4);
+
+  document.write(`<br>#5 Numerical tests <br>`);
+  document.write(`99 Equals to 99? <br>`);
+  let result5 = (99 === 99)? "True<br>": "False<br>";
+  document.write(result5);
+
+  document.write(`99 Equals to 55? <br>`);
+  let result6 = (99 === 55)? "True<br>": "False<br>";
+  document.write(result6);
+
+  document.write(`99 Greater Than 55? <br>`);
+  let result7 = (99 > 55)? "True<br>": "False<br>";
+  document.write(result7);
+
+  document.write(`99 Less Than 55? <br>`);
+  let result8 = (99 < 55)? "True<br>": "False<br>";
+  document.write(result8);
+
+  document.write(`99 Greater Than and equals to 55? <br>`);
+  let result9 = (99 >= 55)? "True<br>": "False<br>";
+  document.write(result9);
+
+
+  document.write(`99 Less Than and equals to 55? <br>`);
+  let result10 = (99 <= 55)? "True<br>": "False<br>";
+  document.write(result10);
+
+  document.write(`55 < 56 && abc = abc? <br>`);
+  let result11 = (55 < 56 && "abc" === "abc")? "True<br>": "False<br>";
+  document.write(result11);
+
+  document.write(`55 < 56 OR absc = abc? <br>`);
+  let result12 = (55 < 56 || "absc" === "abc")? "True<br>": "False<br>";
+  document.write(result12);
+
+  document.write(`Pakistan is in array or not ["Pakistan", "India", "Bangladesh"]<br>`);
+  const countries = ["Pakistan", "India", "Bangladesh"];
+  document.write(countries.includes("Pakistan"));
+  document.write('<br>');
+
+  document.write(`Pakistan not in array or not ["Pakistan", "India", "Bangladesh"] <br>`);
+
+  document.write(!countries.includes("Pakistan"));
+
+
+
+</script>
+
+</html>
