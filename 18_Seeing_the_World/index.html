@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>18. Seeing the World</title>
+</head>
+
+<body>
+  
+</body>
+<script type="text/javascript">
+
+var places  = [
+    'The Grand Canyon, Arizona',
+    'Rome, Italy', 
+    'Maui, Hawaii', 
+    'Istanbul, Turkey',  
+    'Angkor Wat, Cambodia'  
+  ];
+  document.write(`Array in its original order.<br>`);
+  document.write(places); 
+  
+  document.write(`<br><br><br>Array in alphabetical order<br>`);
+  var sorted = [...places].sort();
+  document.write(sorted);
+  document.write(`<br>Orignal Array<br>`);
+  document.write(places);
+
+  document.write(`<br><br><br>Reverse Array<br>`);
+  document.write([...places].reverse());
+  document.write(`<br>Orignal Array<br>`);
+  document.write(places);
+
+
+  document.write(`<br><br><br>Reverse Array<br>`);
+  var reverse_array = [...places].reverse();
+  document.write(reverse_array);
+  document.write(`<br>Reverse the Array again that just reversed.<br>`);
+  var reverse_array_again = reverse_array.reverse();
+  document.write(reverse_array_again);
+
+  document.write(`<br><br><br>Sort Array Alphabetical Order<br>`);
+  var sorted = places.sort();
+  document.write(sorted);
+  document.write(`<br>Sort Again.<br>`);
+  var sorted = places.sort();
+  document.write(sorted);
+
+</script>
+
+</html>

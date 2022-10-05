@@ -30,20 +30,27 @@
   // Add new guest at end of the array as append is not a javascript function.
   guests.push('Hamza Jamsheed');
   console.log(guests);
-  guests.forEach(function (guest, index){
-    document.write(`${index} and lenth is ${guests.length}<br>`);
 
-    if(index < (guests.length-2)){
-        document.write(`${guest} you’re sorry you can’t invite them to dinner.`);
+ let filtered = guests.filter(function(element, index){
+    if(index > 4){
+      return true;
+    }else{
+      document.write(` ${element} you’re sorry you can’t invite them to dinner.<br>`);
     }
+ });
 
 
-    document.write(`${guest} is invited for dinner <br>`);
-  });
+ document.write(`<br><br><br>After Removing all element except the last two.<br>`);
+ filtered.map(function (element){
+  document.write(`${element} you are still in list<br>`);
+ });
+ filtered.splice(-2,2);
+ document.write(`<br><br>After Removing last two elements.<br>`);
 
-
-
-
+  if (filtered.length === 0) {   
+    console.log(filtered);
+    document.write('List is Empty');
+  }
   document.write(`<br><br>found a bigger dinner table.`);
 </script>
 
