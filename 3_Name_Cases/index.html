@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>2.Name Cases</title>
+  <title>2. Name Cases</title>
 </head>
 
 <body>
   <h3 id="personal_message"></h3>
 </body>
 <script type="text/javascript">
+    document.write(`<h2>2. Name Cases</h2>`);
+
   let titleCase = (str) => {
     return str.toLowerCase().split(' ').map(function (word) {
       return word.replace(word[0], word[0].toUpperCase());
